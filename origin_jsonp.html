@@ -36,7 +36,7 @@
 
 	</style>
 	<script type="text/javascript">
-	function abc(data){
+	function lisw(data){
 		var d = data.weather;
 		var info = document.getElementById('info');
 		info.innerHTML = '';
@@ -75,7 +75,7 @@
 		
 		btn.onclick = function(){
 			var cityCode = city.value;
-			var url = 'http://cdn.weather.hao.360.cn/api_weather_info.php?app=hao360&_jsonp=abc&code='+city.value;
+			var url = 'http://cdn.weather.hao.360.cn/api_weather_info.php?app=hao360&_jsonp=lisw&code='+city.value;
 			var script = document.createElement('script');
 			script.src = url;
 			document.body.appendChild(script);
